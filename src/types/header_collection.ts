@@ -4,7 +4,7 @@ export type HtmlScrapableHeaders = {
 };
 
 export type NecessaryHeaders = HtmlScrapableHeaders & {
-    Host: "www.quora.com";
-    Origin: "https://www.quora.com";
+    Host: "pt.quora.com";
+    Origin: "https://pt.quora.com";
     "Content-Type": "application/json";
 };

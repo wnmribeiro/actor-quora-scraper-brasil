@@ -27,8 +27,8 @@ export const scrapeCookies = async (
     session.setCookiesFromResponse(response);
     const headers: NecessaryHeaders = {
         "Content-Type": "application/json",
-        Host: "www.quora.com",
-        Origin: "https://www.quora.com",
+        Host: "pt.quora.com",
+        Origin: "https://pt.quora.com",
         ...scrapeHeaders(response.body),
     };
     session.userData.headers = headers;

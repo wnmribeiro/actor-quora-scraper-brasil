@@ -1,35 +1,31 @@
-# What does Quora Scraper do?
+# O que faz ?
 
-Quora Scraper lets you scrape questions found with [Quora's](https://www.quora.com/) search and answers for each of them. The result will include basic information for each question and answer, including their contents, urls etc. You can use this scraper as an unofficial Quora API.
+O Quora Scraper permite que você raspe perguntas encontradas na pesquisa e suas respostas. O resultado incluirá informações básicas para cada pergunta e resposta, incluindo seu conteúdo, urls, etc. Você pode usar esse raspador de dados como uma API não oficial do Quora.
 
-# Why scrape Quora?
+# Porque ?
 
-Quora is one of the biggest knowledge bases on the Internet. Naturally, there are lots of ways to utilize the information this scraper would provide.
+O Quora é uma das maiores bases de conhecimento na Internet. Naturalmente, existem muitas maneiras de utilizar as informações que esse raspador de dados forneceria.
 
-For example, you can simply use it to quickly search for answers you are interested in and store them for future reference. Or, you can use the acquired knowledge for business research in a particular domain area or feed the data to your academic machine learning projects.
+Por exemplo, você pode simplesmente usá-lo para buscar rapidamente respostas que lhe interessam e armazená-las para referência futura. Ou, pode utilizar o conhecimento adquirido para pesquisas de negócios em uma área de domínio específica ou alimentar os dados em seus projetos acadêmicos de aprendizado de máquina.
 
-If you feel that this scraper is missing some functionality, feel free to contact support
+Se sentir que este raspador de dados está faltando alguma funcionalidade, sinta-se à vontade para entrar em contato
 
-# How much will it cost to scrape Quora?
+# Quanto custa ?
 
-Cost usage depends on the type of proxy you use and the number of questions and answers that are scraped. For example, using Apify's automatic proxy (United states) the scraper was able to parse 698 questions with their answers using $0.131. Therefore, with Apify's $5 free usage, you'd be able to parse 5 / 0.131 * 698 = ~26 000 questions.
+O custo do uso depende do tipo de proxy que você usa e do número de perguntas e respostas que são raspadas. Por exemplo, usando o proxy automático da Apify (Estados Unidos), o raspador foi capaz de analisar 698 perguntas com suas respostas usando $0,131. Portanto, com o uso gratuito de $5 da Apify, você seria capaz de analisar 5 / 0,131 * 698 = ~26.000 perguntas.
 
 # How to scrape Quora?
 
-1. Go to [Quora Scraper](https://apify.com/svpetrenko/quora-scraper) on Apify
-2. Click **Try for free** button
-3. Enter scraper Input (see below): search query and proxy configuration. Using Apify's automatic proxy will be good.
-4. Click the Start button
-5. When the run has finished, you'll see the table of questions in the **default dataset**, which you can export in any format you'd like. You'll see the answers for each question in the **default key-value store**.
+1. Acesse [Quora Scraper Brasil](https://apify.com/wiliamribeiro/quora-brasil) ni Apify
+2. Clique em **Try for free**
+3. Experimente tags diferentes para pesquisa e selecione o proxy escolhido ao seu escopo.
+4. Clique em Start/Iniciar
+5. Quando a execução terminar, você verá a tabela de perguntas no conjunto de dados padrão, que pode ser exportado em qualquer formato desejado. Você verá as respostas para cada pergunta no armazenamento chave-valor padrão.
 
-# Is it legal to scrape Quora?
+# Entrada
 
-Our scrapers are ethical and do not extract any private user data, such as email addresses, gender, or location. They only extract what the user has chosen to share publicly. We therefore believe that our scrapers, when used for ethical purposes by Apify users, are safe. However, you should be aware that your results could contain personal data. Personal data is protected by the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/).
+O Quora Scraper tem algumas opções de entrada obrigatórias: consulta de pesquisa (o raspador a usará para encontrar perguntas e suas respostas) e configuração de proxy (sem usar proxy, muitas solicitações podem ser bloqueadas, portanto, certifique-se de selecionar algum; NOTA: o proxy residencial provavelmente não funcionará com este raspador). Clique na guia Entrada para obter mais informações.
 
-# Input
+# Saída
 
-Quora Scraper has some required input options: search query (the scraper will use it to find questions and their answers) and proxy configuration (without using proxy, many requests might get blocked, so be sure to select some; *NOTE: residential proxy will likely not work with this scraper*). Click on the [Input tab](https://apify.com/svpetrenko/quora-scraper/input-schema) for more information.
-
-# Output
-
-Quora Scraper will add questions to the **default dataset**. You can download the dataset in various formats such as JSON, HTML, CSV, or Excel. For each question, in the **default Key-Value store** there will be an entry with the key of this format: `qid_123456_answers`, where `123456` will be replaced by the actual `qid` of the question (one of the fields extracted by the scraper).
+O Quora Scraper adicionará perguntas ao conjunto de dados padrão. Você pode baixar o conjunto de dados em vários formatos, como JSON, HTML, CSV ou Excel. Para cada pergunta, no armazenamento chave-valor padrão haverá uma entrada com a chave neste formato: qid_123456_answers, onde 123456 será substituído pelo qid real da pergunta (um dos campos extraídos pelo raspador).

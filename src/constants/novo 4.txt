@@ -1,0 +1,17 @@
+POST /graphql HTTP/2
+Host: nav-bff.dasa.com.br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0
+Accept: */*
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: https://nav.dasa.com.br/
+Content-Type: application/json
+X-Dtc: sn="v_4_srv_4_sn_VCSCCD0BF2V98EJT5K0N3KN5P09BETNN", v="16700673694495O2902UE8AP3Q08E64P14HA41MSO7TQD", app="9da34988637cb694", r=""
+Content-Length: 546
+Origin: https://nav.dasa.com.br
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Te: trailers
+
+{"operationName":"checkAccount","variables":{"userName":"123454"},"query":"query checkAccount($userName: String!) {\n  checkAccount(userName: $userName) {\n    status\n    federalTaxId\n    accountSearch {\n      id\n      phoneContacts {\n        id\n        contactType\n        value\n        __typename\n      }\n      emailContacts {\n        id\n        contactType\n        value\n        __typename\n      }\n      __typename\n    }\n    accountLoginSearch {\n      mobile\n      email\n      __typename\n    }\n    __typename\n  }\n}\n"}
